@@ -1,0 +1,132 @@
+/*=== base css start === */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.btn-brand {
+  background: #0071bc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.btn-brand:hover {
+  color: #fff;
+  background: #0062a3;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.navbar {
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(167, 177, 184, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(167, 177, 184, 0.2);
+  padding: .75rem 1rem;
+}
+
+@media (min-width: 1600px) {
+  .navbar .input-group {
+    max-width: 575px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .navbar .input-group {
+    max-width: 380px;
+  }
+}
+
+.navbar .input-group .form-control {
+  border: 1px solid #0071bc;
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar .input-group .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar .input-group .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar .input-group .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar .input-group .form-control::placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar .input-group .search-btn {
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link:hover {
+  color: #0071bc;
+}
+
+@media (min-width: 1200px) {
+  .navbar.navbar-light .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.navbar .user-avatar {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(0, 113, 188, 0.1);
+  border-radius: 50%;
+}
+
+/*===// end of components css === */
+/*=== pages start === */
+/*===// end of pages  === */
+/*# sourceMappingURL=style.css.map */
