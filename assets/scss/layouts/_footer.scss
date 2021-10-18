@@ -1,0 +1,37 @@
+.page-footer {
+    .footer-top {
+        .social-list {
+            li {
+                padding: 8px;
+                &:last-child{
+                    padding-right: 0;
+                }
+                .social-link {
+                    font-size: 25px;
+                    color: $black-color;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        .copyright {
+            font-size: 14px;
+            color: rgba($black-color, 0.6);
+        }
+        .footer-link {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba($black-color, 0.7);
+            
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

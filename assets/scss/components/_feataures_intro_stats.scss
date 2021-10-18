@@ -1,0 +1,18 @@
+@import '../abstracts/mixins';
+
+.feataures-intro-stats {
+    text-align: center;
+    background-color: #f8f9fb;
+    padding: 50px 0 40px 0;
+    
+
+    .intro-state-items {
+        .title {
+            @include section-heading(20px);
+            margin: 25px 0 7px 0;
+        }
+        .description {
+            @include section-heading(14px, $black-color, 500)
+        }
+    }
+}

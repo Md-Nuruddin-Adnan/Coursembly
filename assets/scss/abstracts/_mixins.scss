@@ -1,0 +1,5 @@
+@mixin section-heading($font-size: 36px, $color: #000, $font-weight: 700){
+    font-size: $font-size;
+    color: $color;
+    font-weight: $font-weight;
+}

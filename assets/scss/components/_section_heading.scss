@@ -1,0 +1,8 @@
+@import '../abstracts/mixins';
+
+.section-heading {
+    @include section-heading();
+}
+.section-heading-link {
+    @include section-heading(14px, $primary-color);
+}

@@ -1,0 +1,85 @@
+.course-item {
+    .card-body {
+        padding: 1rem .8rem;
+    }
+
+    .author-info {
+        margin-top: -32px;
+        position: relative;
+        z-index: 1;
+        .author-image {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid $white-color;
+            margin-right: 10px;
+        }
+        .author-name {
+            font-size: 13px;
+            color: rgba($black-color, 0.7);
+        }
+    }
+
+    .category {
+        font-size: 10px;
+        color: $primary-color;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .course-title {
+        font-size: 14px;
+        color: $black-color;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .badge-success {
+        background-color: #26a541;
+        font-size: 12px;
+        font-weight: 600;
+
+        i {
+            font-size: 10px;
+        }
+    }
+
+    .review {
+        font-size: 12px;
+        color:rgba($black-color, 0.6);
+        margin-left: 10px;
+    }
+
+    .card-footer {
+        padding: .5rem .8rem;
+        background-color: transparent;
+    }
+
+    .course-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-color;
+
+        sub {
+            font-size: 14px;
+            font-weight: 400;
+            color: $black-color;
+            opacity: 0.6;
+            bottom: 0;
+            text-decoration:line-through
+        }
+    }
+
+    .action {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $white-color;
+        text-align: left;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,28 @@
+.banner {
+    background: #6eadcd;
+
+    .banner-heading {
+        font-size: 40px;
+        font-weight: 700;
+        color: $white-color;
+        margin-bottom: 40px;
+
+        @media (min-width: 1200px) {
+            white-space: pre-line;
+        }
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .input-group {
+            max-width: 450px;
+        }
+    }
+    
+
+    .input-group-lg>.btn {
+        padding: .75rem 1rem;
+    }
+}
