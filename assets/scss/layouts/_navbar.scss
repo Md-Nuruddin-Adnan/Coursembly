@@ -12,11 +12,11 @@
         .form-control {
             border: 1px solid $primary-color;
             font-size: 14px;
-            color: $secondary-color;
+            color: $black-color;
 
             &::placeholder {
                 font-size: 14px;
-                color: $secondary-color;
+                color: $black-color;
             }
         }
 
@@ -29,7 +29,7 @@
     &.navbar-light .navbar-nav .nav-link{
         font-size: 14px;
         font-weight: 500;
-        color: $secondary-color;
+        color: $black-color;
 
         &:hover {
             color: $primary-color;
@@ -47,4 +47,22 @@
         border: 1px solid rgba($primary-color, 0.1);
         border-radius: 50%;
     }
+
+    @media (max-width: 1199px){
+        .navbar-nav{
+            &.logged-in {
+                flex-direction: row;
+
+                .nav-link {
+                    padding-right: 15px;
+                }
+                
+                .user-avatar {
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+    
+ 
 } 

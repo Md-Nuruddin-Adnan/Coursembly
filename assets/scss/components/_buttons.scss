@@ -1,0 +1,20 @@
+// btn start
+.btn-brand {
+    background: $primary-color;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+
+    &:hover {
+        color: $white-color;
+        background: darken($primary-color, 5);
+    }
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+// btn end
