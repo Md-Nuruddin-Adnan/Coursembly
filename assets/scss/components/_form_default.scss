@@ -1,0 +1,16 @@
+.form-default {
+    label {
+        font-weight: 500;
+        font-size: 16px;
+        color: $black-color;
+    }
+
+    .form-control {
+        font-size: 16px;
+        padding: 12px;
+       
+        &::placeholder {
+            color: rgba($black-color, 0.6);
+        }
+    }
+}

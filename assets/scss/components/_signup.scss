@@ -1,0 +1,7 @@
+.signup {
+    min-height: 100vh;
+   
+    @media (min-width: 1200px) {
+        background: linear-gradient(90deg, #078dc5 50%, $white-color 50%);
+    }
+}
