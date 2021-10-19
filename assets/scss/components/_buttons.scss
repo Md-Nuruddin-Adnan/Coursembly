@@ -16,6 +16,16 @@
         color: $white-color;
         background: darken($primary-color, 5);
     }
+
+    &--white{
+        background: $white-color;
+        color: $primary-color;
+
+        &:hover{
+            background: darken($white-color, 5);
+            color: $primary-color;
+        }
+    }
 }
 
 // btn end

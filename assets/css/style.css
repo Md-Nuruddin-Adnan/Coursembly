@@ -61,6 +61,16 @@ body {
   background: #0062a3;
 }
 
+.btn-brand--white {
+  background: #fff;
+  color: #0071bc;
+}
+
+.btn-brand--white:hover {
+  background: #f2f2f2;
+  color: #0071bc;
+}
+
 .section-heading {
   font-size: 36px;
   color: #000;
@@ -75,7 +85,7 @@ body {
 
 /* the slides */
 .slick-slide {
-  margin: 0 0.75rem;
+  margin: 0 0.65rem;
 }
 
 .slick-arrow {
@@ -138,7 +148,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -295,6 +305,39 @@ body {
   font-size: 14px;
   color: #000;
   font-weight: 500;
+}
+
+.category .category-item, .my-course-item .progress-percentage .category-item {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.category .category-item .category-name, .my-course-item .progress-percentage .category-item .category-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+.become-a-instructor .main-content {
+  background: url(../images/become-instructor/become-instructor.png) no-repeat center center/cover;
+  padding: 50px 0 40px 0;
+}
+
+.become-a-instructor .main-content .description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 0 30px 0;
 }
 
 /*===// end of components css === */

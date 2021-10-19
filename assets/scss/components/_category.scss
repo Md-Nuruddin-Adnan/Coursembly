@@ -1,0 +1,21 @@
+.category {
+    .category-item {
+        display: block;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+
+        .category-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: $white-color;
+            position: absolute;
+            left: 50%;
+            bottom: 1.5rem;
+            z-index: 1;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    }
+}
