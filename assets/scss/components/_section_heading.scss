@@ -2,6 +2,10 @@
 
 .section-heading {
     @include section-heading();
+
+    @media(max-width: 767px){
+        @include section-heading(30px);
+    }
 }
 .section-heading-link {
     @include section-heading(14px, $primary-color);

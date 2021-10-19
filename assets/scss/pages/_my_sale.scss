@@ -1,0 +1,105 @@
+.sale-summary {
+    .sale-summary-full {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        border-radius: 4px;
+        overflow: hidden;
+
+        .sale-summary-item {
+            border: 1px solid #dee1e6;
+            padding: 20px;
+
+            &:first-child {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            &:last-child {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+
+            .sale-summary-name {
+                font-size: 12px;
+                color: rgba($black-color, 0.6);
+                text-transform: uppercase;
+            }
+            .sale-summary-counter {
+                font-size: 32px;
+                font-weight: 600;
+                color: $black-color;
+                white-space: nowrap;
+
+                sup{
+                    top: -5px;
+                }
+            }
+            .sale-summary-link {
+                font-size: 16px;
+                font-weight: 600;
+                color: $primary-color;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+// course-sale-item card css start
+.course-sale-item{
+    .card-body {
+        padding: 1rem .9rem;
+    }
+    .category {
+        font-size: 12px;
+        color: rgba($black-color, 0.6)
+    }
+    .course-title {
+        font-size: 16px;
+        color: $black-color;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .badge-success {
+        background-color: #26a541;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 8px;
+
+        i {
+            font-size: 10px;
+        }
+    }
+    .review {
+        font-size: 12px;
+        color:rgba($black-color, 0.6);
+        margin-left: 10px;
+    }
+    .course-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-color;
+        margin-top: 20px;
+        margin-bottom: 4px;
+
+        sub {
+            font-size: 14px;
+            font-weight: 400;
+            color: $black-color;
+            opacity: 0.6;
+            bottom: 0;
+            text-decoration:line-through
+        }
+    }
+    .sold-count {
+        font-size: 14px;
+        font-weight: 400;
+        color: $black-color;
+        opacity: 0.6;
+    }
+    .action {
+        font-size: 14px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+}
+// course-sale-item card css end
