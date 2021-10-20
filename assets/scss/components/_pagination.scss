@@ -1,0 +1,43 @@
+.pagination {
+    .page-item {
+        .page-link{
+            border: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba($black-color, 0.6);
+            border-radius: 50%;
+            margin: 5px;
+            display: block;
+        }
+
+        &.active {
+           .page-link{
+                background-color: $primary-color;
+                color: $white-color;
+           }
+        }
+
+        &:first-child {
+            .page-link {
+                background-color: $white-color;
+                border: 1px solid $primary-color;
+                border-radius: 4px;
+                color: $primary-color;
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+        &:last-child {
+            .page-link {
+                background-color: $white-color;
+                border: 1px solid $primary-color;
+                border-radius: 4px;
+                color: $primary-color;
+                i {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import '../abstracts/mixins';
+.filter {
+    box-shadow: 0px 2px 2px 0px rgba(167, 177, 184, 0.2);
+    background: #f7f7f7;
+
+   .section-heading {
+       sub {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba($black-color, 0.9);
+        top: 0;
+        white-space: nowrap;
+       }
+   } 
+   .filter-title {
+       @include section-heading(20px);
+   }
+
+   .sort-by {
+       border: 1px solid #ced4da;
+       border-radius: 4px;
+       background-color: $white-color;
+       padding: .25rem 0 .25rem .75rem;
+       font-size: 12px;
+       color: $black-color;
+       text-transform: uppercase;
+
+       .form-select {
+        background-color: transparent;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:focus{
+            box-shadow: none;
+        }
+       }
+   }
+
+   .filter-form {
+    box-shadow: 0px 10px 20px 0px rgba(47, 58, 84, 0.05);
+
+    label {
+        @include section-heading(12px);
+        opacity: 0.9;
+        text-transform: uppercase;
+    }
+    .form-select {
+        font-size: 14px;
+        color: rgba($black-color, 0.7);
+        &:focus{
+            box-shadow: none;
+        }
+    }
+   }
+
+   .selected-list {
+        .btn-sm {
+            background-color: #ededed;
+            margin-right: 5px;
+            margin-bottom: 5px;
+
+            .remove-selection {
+                color: #7e7e7e;
+                margin-left: 10px;
+            }
+        }
+
+        .clear-btn {
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba($black-color, 0.9);
+        }
+   }
+}
+  
+  

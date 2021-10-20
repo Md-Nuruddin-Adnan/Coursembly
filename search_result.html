@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coursembly | Search Result</title>
+  <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- === header section start === -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="input-group mx-xl-4 my-xl-0 my-3">
+            <input type="text" class="form-control" placeholder="Find a Course...">
+            <button class="btn btn-brand search-btn" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Become a Instructor</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-xl-center logged-in">
+            <li class="nav-item">
+              <a class="nav-link p-xl-0" href="#"><img src="assets/images/avatar.png" alt="avatar" class="img-fluid user-avatar"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+
+
+ 
+
+  <!-- === filter section start === -->
+  <section class="filter py-5 mb-5">
+    <div class="container pt-4">
+      <h2 class="section-heading mb-4">Web Design Courses <sub>Found 254 Courses</sub> </h2>
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h4 class="filter-title">Filters</h4>
+        <div class="d-flex align-items-center text-nowrap sort-by">
+          <span>Sort By: </span>
+          <select class="form-select">
+            <option selected>Newest</option>
+            <option value="1">Low to High</option>
+            <option value="2">High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div class="card filter-form border-0">
+        <div class="card-body">
+          <div class="row g-4">
+            <div class="col-xl-9">
+              <div class="row g-xxl-4 g-xl-3 g-4">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>Topic</label>
+                  <select class="form-select w-100">
+                    <option selected>Design</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>CATEGORIES</label>
+                  <select class="form-select w-100">
+                    <option selected>Digital 2D</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>Language</label>
+                  <select class="form-select w-100">
+                    <option selected>Show All</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>LEVEL</label>
+                  <select class="form-select w-100">
+                    <option selected>Beginner</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>Video Duration</label>
+                  <select class="form-select w-100">
+                    <option selected>Show All</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <label>Ratings</label>
+                  <select class="form-select w-100">
+                    <option selected>Show All</option>
+                    <option value="1">Low to High</option>
+                    <option value="2">High to Low</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="row g-4 align-items-center">
+                <div class="col-sm-9">
+                  <label>price</label>
+                  <!-- <input type="range" class="form-range" id="customRange" data-slider-min="0"> -->
+                  <input type="range" class="form-range" id="customRange1">
+                  <!-- <span id="min-range">1</span>
+                  <span id="max-range">1000</span> -->
+                </div>
+                <div class="col-sm-3">
+                  <a href="#" class="btn btn-outline-success">FREE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="selected-list ps-0 mt-4">
+        <a href="#" class="btn btn-sm">Design <span class="remove-selection"> ✖ </span></a>
+        <a href="#" class="btn btn-sm">$1 - $750 <span class="remove-selection"> ✖ </span></a>
+        <a href="#" class="btn clear-btn"> CLEAR ALL</a>
+      </ul>
+    </div>
+  </section>
+  <!-- ===//end of filter section === -->
+
+
+
+  <!-- === search-result section === -->
+  <section class="mb-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_1.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_2.png" alt="author image" class="author-image">
+                <span class="author-name">Al Sweigart</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_3.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_4.png" alt="author image" class="author-image">
+                <span class="author-name">Kirill Eremenko</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_5.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_6.png" alt="author image" class="author-image">
+                <span class="author-name">Stephane Maarek</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_1.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_2.png" alt="author image" class="author-image">
+                <span class="author-name">Al Sweigart</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_3.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_4.png" alt="author image" class="author-image">
+                <span class="author-name">Kirill Eremenko</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_5.png" alt="author image" class="author-image">
+                <span class="author-name">Kyle Pew</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card course-item">
+            <div class="card-img">
+              <a href="#"><img src="assets/images/courses/courses_item_thumbnail.png" alt="course thumbnail" class="w-100"></a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="d-flex align-items-end author-info">
+                <img src="assets/images/courses/author_6.png" alt="author image" class="author-image">
+                <span class="author-name">Stephane Maarek</span>
+              </a>
+              <a href="#" class="category">DEVELOPMENT</a>
+              <h3 class="course-title">Microsoft Excel - Excel from Beginner to Advanced</h3>
+              <div class="d-flex align-items-center">
+                <span class="badge badge-success">5.0 <i class="fas fa-star"></i></span>
+                <span class="review">1245 Reviews</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+              <h4 class="course-price text-nowrap">$3.47 <sub>$17.99</sub></h4>
+              <a href="#" class="action">
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a href="#" class="page-link"><i class="far fa-chevron-left"></i> PREV</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item active"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">NEXT <i class="far fa-chevron-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- ===//end of search-result section === -->
+
+    
+
+ 
+  
+  <!-- === footer section start === -->
+  <footer class="page-footer pt-5 pb-3 text-center">
+    <div class="container">
+      <div class="footer-top border-top d-md-flex align-items-center justify-content-between pt-3">
+        <a href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+        <ul class="social-list d-flex align-items-center justify-content-center">
+          <li><a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-youtube-square"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom d-md-flex align-items-center justify-content-between">
+        <p class="copyright">© 2020 Coursembly. All Rights Reserved.</p>
+        <ul class="d-flex align-items-center justify-content-center">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link ms-4">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ===//end of footer section === -->
+ 
+
+ 
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap-slider.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    $("#customRange").slider({
+      min: 1,
+      max: 1000,
+      step: 1,
+      range: true,
+      tooltip_split:true,
+      lock_to_ticks:true,
+      natural_arrow_keys:true,
+      tooltip: 'hide',
+      formatter: function(value) {
+        // $('#min-range').innerHTML = value[0];
+        console.log(value[0]);
+        // return 'Current value: ' + value;
+      }
+
+    });
+
+  </script>
+</body>
+</html>

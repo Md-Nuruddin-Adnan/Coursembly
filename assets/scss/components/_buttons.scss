@@ -47,4 +47,14 @@
     }
 }
 
+.btn-outline-success {
+    border: 1px solid #26a541 !important;
+    color: #26a541 !important;
+
+    &:hover{
+        background: #26a541 !important;
+        color: $white-color !important;
+    }
+}
+
 // btn end

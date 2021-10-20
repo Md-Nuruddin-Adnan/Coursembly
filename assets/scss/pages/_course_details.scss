@@ -1,0 +1,117 @@
+@import '../abstracts/mixins';
+
+.course-details {
+    background: #f7f7f7;
+
+    .author-full {
+        .author-img {
+            width: 44px;
+            height: 44px;
+            border: 2px solid $white-color;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .author-name {
+           @include section-heading(14px, rgba($black-color, 0.7));
+        }
+        .ratings {
+            @include text-style(14px, rgba($black-color, 0.7));
+        }
+    }
+}
+
+
+
+#overview {
+    .nav-tabs .nav-link {
+        @include text-style(16px, $black-color, 500);
+
+        &.active {
+            @include text-style(16px, $primary-color, 600);
+            border: 0;
+        }
+    }
+
+    .title {
+        @include section-heading(24px);
+    }
+
+    .description {
+        @include text-style(16px);
+        line-height: 28px;
+    }
+}
+
+
+#what-will-learn {
+    .title {
+        @include section-heading(24px);
+    }
+
+    ul {
+        columns: 300px 2;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            @include text-style(16px);
+        }
+    }
+}
+
+
+#requirements {
+    .title {
+        @include section-heading(24px);
+    }
+
+    .requirement-list {
+        li {
+            display: inline-block;
+            list-style: square;
+            padding: 10px 25px 10px 20px;
+            position: relative;
+
+            &::before {
+                content: '⬤';
+                font-size: 8px;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+#faqs {
+    .title {
+        @include section-heading(24px);
+    }
+
+    .accordion-button {
+        @include text-style(16px);
+        padding-left: 0;
+        padding-right: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .accordion-button:not(.collapsed){
+        background-color: transparent;
+        color: $primary-color;
+    }
+}
+
+
+#rating-review {
+    .title {
+        @include section-heading(24px);
+    }
+
+}
+
+//  color: $black-color;
+//  color: rgba($black-color, 0.7);
