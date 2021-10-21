@@ -105,6 +105,20 @@ body {
   background: #262626;
 }
 
+.btn-outline-brand {
+  background: #fff;
+  color: #0071bc;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 1px solid #0071bc;
+}
+
+.btn-outline-brand:hover {
+  color: #fff;
+  background: #0071bc;
+}
+
 .btn-outline-success {
   border: 1px solid #26a541 !important;
   color: #26a541 !important;
@@ -552,6 +566,39 @@ body {
 .filter .filter-form .form-select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.filter .filter-form #min-range {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  padding-right: 12px;
+}
+
+.filter .filter-form #max-range {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  padding-left: 12px;
+}
+
+.filter .filter-form .slider-track {
+  background: #d6d6d6;
+  height: 3px;
+}
+
+.filter .filter-form .slider-selection {
+  background: #0071bc;
+}
+
+.filter .filter-form .slider-handle {
+  width: 12px;
+  height: 12px;
+}
+
+.filter .filter-form .slider.slider-horizontal {
+  width: 90% !important;
+  margin-top: 4px;
 }
 
 .filter .selected-list .btn-sm {
@@ -1053,6 +1100,95 @@ body {
   font-size: 24px;
   color: #000;
   font-weight: 700;
+}
+
+#rating-review .rating-review-header {
+  border: 1px solid #dee1e6;
+}
+
+#rating-review .rating-review-header .rating-number {
+  font-size: 36px;
+  color: #000;
+  font-weight: 400;
+}
+
+#rating-review .rating-review-header .rating-number sub {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  opacity: 0.6;
+  top: 0;
+}
+
+#rating-review .rating-review-header .ratings {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+}
+
+#rating-review .student-review li {
+  margin-bottom: 20px;
+}
+
+#rating-review .student-review .title {
+  font-size: 18px;
+  color: 500;
+  font-weight: 700;
+}
+
+#rating-review .student-review .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#rating-review .student-review .user-name {
+  font-size: 16px;
+  color: 500;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#rating-review .student-review .badge-success {
+  background-color: #26a541;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+#rating-review .student-review .review-date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+}
+
+#rating-review .student-review .review-text {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 15px 0 20px 0;
+}
+
+.course-include-widgets .section-heading sub {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  top: 0;
+}
+
+.course-include-widgets .title {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+
+.course-include-widgets .include-list li {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 8px;
 }
 
 /*===// end of pages  === */

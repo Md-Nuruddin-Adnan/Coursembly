@@ -47,6 +47,21 @@
     }
 }
 
+
+.btn-outline-brand {
+    background: $white-color;
+    color: $primary-color ;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        color: $white-color;
+        background: $primary-color;
+    }
+}
+
 .btn-outline-success {
     border: 1px solid #26a541 !important;
     color: #26a541 !important;
@@ -56,5 +71,7 @@
         color: $white-color !important;
     }
 }
+
+
 
 // btn end

@@ -144,11 +144,12 @@
             <div class="col-xl-3">
               <div class="row g-4 align-items-center">
                 <div class="col-sm-9">
-                  <label>price</label>
-                  <!-- <input type="range" class="form-range" id="customRange" data-slider-min="0"> -->
-                  <input type="range" class="form-range" id="customRange1">
-                  <!-- <span id="min-range">1</span>
-                  <span id="max-range">1000</span> -->
+                  <label class="mb-2">price</label>
+                  <div class="d-flex">
+                    <span id="min-range">$<span id="min-range-show">1</span></span>
+                    <input type="range" class="form-range" id="customRange" >
+                    <span id="max-range">$<span id="max-range-show">750</span></span>
+                  </div>
                 </div>
                 <div class="col-sm-3">
                   <a href="#" class="btn btn-outline-success">FREE</a>
@@ -158,11 +159,11 @@
           </div>
         </div>
       </div>
-      <ul class="selected-list ps-0 mt-4">
+      <div class="selected-list mt-4">
         <a href="#" class="btn btn-sm">Design <span class="remove-selection"> ✖ </span></a>
         <a href="#" class="btn btn-sm">$1 - $750 <span class="remove-selection"> ✖ </span></a>
         <a href="#" class="btn clear-btn"> CLEAR ALL</a>
-      </ul>
+      </div>
     </div>
   </section>
   <!-- ===//end of filter section === -->
@@ -531,24 +532,5 @@
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/bootstrap-slider.min.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    $("#customRange").slider({
-      min: 1,
-      max: 1000,
-      step: 1,
-      range: true,
-      tooltip_split:true,
-      lock_to_ticks:true,
-      natural_arrow_keys:true,
-      tooltip: 'hide',
-      formatter: function(value) {
-        // $('#min-range').innerHTML = value[0];
-        console.log(value[0]);
-        // return 'Current value: ' + value;
-      }
-
-    });
-
-  </script>
 </body>
 </html>

@@ -110,7 +110,72 @@
     .title {
         @include section-heading(24px);
     }
+    .rating-review-header {
+        border: 1px solid #dee1e6;
 
+        .rating-number {
+            @include text-style(36px);
+            sub{
+                @include text-style(16px);
+                opacity: 0.6;
+                top: 0;
+            }
+        }
+        .ratings {
+            @include text-style(14px, rgba($black-color, 0.6));
+        }
+    }
+
+    .student-review {
+        li {
+            margin-bottom: 20px;
+        }
+        .title {
+            @include section-heading(18px, 500);
+        }
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .user-name {
+            @include section-heading(16px, 500);
+            margin-bottom: 10px;
+        }
+        .badge-success {
+            background-color: #26a541;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .review-date{
+            @include text-style(12px, rgba($black-color, 0.6));
+        }
+        .review-text{
+            @include text-style(16px);
+            line-height: 28px;
+            padding: 15px 0 20px 0;
+        }
+    }
+
+}
+
+.course-include-widgets {
+    .section-heading {
+        sub {
+            @include text-style(16px, rgba($black-color, 0.6));
+            top: 0;
+        }
+    }
+    .title {
+        @include section-heading(18px);
+    }
+    .include-list {
+        li {
+            @include text-style();
+            margin-bottom: 8px;
+        }
+    }
 }
 
 //  color: $black-color;

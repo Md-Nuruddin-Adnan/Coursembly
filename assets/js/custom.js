@@ -86,3 +86,23 @@ $('.slide-item-6').slick({
       // instead of a settings object
     ]
 });
+
+
+// range slider
+$("#customRange").slider({
+  min: 1,
+  max: 1000,
+  value: 1,
+  step: 1,
+  range: true,
+  tooltip_split:true,
+  lock_to_ticks:true,
+  natural_arrow_keys:true,
+  tooltip: 'hide',
+  formatter: function(value) {
+    if (Array.isArray(value)) {
+      document.getElementById('min-range-show').innerHTML = value[0];
+      document.getElementById('max-range-show').innerHTML = value[1];
+    }
+  }
+});

@@ -38,20 +38,45 @@
    }
 
    .filter-form {
-    box-shadow: 0px 10px 20px 0px rgba(47, 58, 84, 0.05);
+        box-shadow: 0px 10px 20px 0px rgba(47, 58, 84, 0.05);
 
-    label {
-        @include section-heading(12px);
-        opacity: 0.9;
-        text-transform: uppercase;
-    }
-    .form-select {
-        font-size: 14px;
-        color: rgba($black-color, 0.7);
-        &:focus{
-            box-shadow: none;
+        label {
+            @include section-heading(12px);
+            opacity: 0.9;
+            text-transform: uppercase;
         }
-    }
+        .form-select {
+            font-size: 14px;
+            color: rgba($black-color, 0.7);
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        #min-range{
+            @include text-style(14px, rgba($black-color, 0.7));
+            padding-right: 12px;
+        }
+        #max-range {
+            @include text-style(14px, rgba($black-color, 0.7));
+            padding-left: 12px;
+        }
+
+        .slider-track {
+            background: #d6d6d6;
+            height: 3px;
+        }
+        .slider-selection {
+            background: $primary-color;
+        }
+        .slider-handle {
+            width: 12px;
+            height: 12px;
+        }
+        .slider.slider-horizontal {
+            width: 90% !important;
+            margin-top: 4px;
+        }
    }
 
    .selected-list {
@@ -72,6 +97,4 @@
             color: rgba($black-color, 0.9);
         }
    }
-}
-  
-  
+} 
